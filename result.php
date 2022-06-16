@@ -110,6 +110,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 	/* LEAST */
 	$most = array("D"=>$MD["POINT"], "I"=>$MI["POINT"], "S"=>$MS["POINT"], "C"=>$MC["POINT"]);
 	$least = array("D"=>$LD["POINT"], "I"=>$LI["POINT"], "S"=>$LS["POINT"], "C"=>$LC["POINT"]);
-	echo array_search(max($most), $most)." --> ".array_search(min($least), $least);
+	echo array_search(max($most), $most)." --> ".array_search(max($least), $least);
 }
 ?>
